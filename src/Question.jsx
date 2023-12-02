@@ -1,35 +1,14 @@
 import React from 'react'
-
+import 'tailwindcss/tailwind.css';
 import PropTypes from 'prop-types'
 
 const Question = (props) => {
   return (
-    <div
-      style={{
-        gap: '16px',
-        flex: '1',
-        width: 'auto',
-        height: 'auto',
-        display: 'flex',
-        position: 'relative',
-        alignItems: 'flex-start',
-        flexDirection: 'column',
-      }}
-    >
-      <span
-        style={{
-          fontWeight: '700',
-          lineHeight: 1.6,
-        }}
-      >
+    <div className="gap-4 flex-1 w-auto h-auto flex relative items-start flex-col">
+      <span className="font-semibold leading-6">
         {props.Question}
       </span>
-      <span
-        style={{
-          color: '#595959',
-          lineHeight: 1.6,
-        }}
-      >
+      <span className="text-gray-600 leading-6">
         {props.Answer}
       </span>
     </div>

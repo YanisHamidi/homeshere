@@ -1,34 +1,14 @@
 import React from 'react'
-
+import 'tailwindcss/tailwind.css';
 import PropTypes from 'prop-types'
 
 const GalleryCard3 = (props) => {
   return (
-    <div
-      style={{
-        width: '100%',
-        height: '300px',
-        display: 'flex',
-        position: 'relative',
-        alignItems: 'center',
-        flexDirection: 'column',
-        justifyContent: 'center',
-      }}
-    >
+    <div className="w-full h-72 flex relative items-center flex-col justify-center">
       <img
         alt={props.image_alt}
         src={props.image_src}
-        style={{
-          top: '0px',
-          left: '0px',
-          right: 'auto',
-          width: '100%',
-          bottom: 'auto',
-          height: '300px',
-          position: 'absolute',
-          objectFit: 'cover',
-          borderRadius: '8px',
-        }}
+        className="absolute top-0 left-0 right-auto w-full bottom-auto h-72 object-cover rounded-lg"
       />
     </div>
   )
