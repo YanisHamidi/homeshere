@@ -3,7 +3,7 @@ import HomePage from './HomePage.jsx';
 
 function App() {
  return (
-    <div className="App">
+    <div className="App" >
       <HomePage />
     </div>
  );
